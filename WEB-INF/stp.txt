@@ -1,0 +1,11 @@
+set classpath=%classpath%;C:\Program Files\Apache Software Foundation\Tomcat 10.0\webapps\WEB1\src\net\codejava\servlet\jakarta.servlet-api-5.0.0.jar;.;
+
+
+set classpath=%classpath%;set classpath=%classpath%;C:\Program Files\Apache Software Foundation\Tomcat 10.0\lib\jakarta.servlet-api-5.0.0.jar;C:\Program Files\Apache Software Foundation\Tomcat 10.0\lib\postgresql-42.5.0.jar;.;
+
+
+set classpath=%classpath%;set classpath=%classpath%;C:\Program Files\Apache Software Foundation\Tomcat 10.0\lib\jakarta.servlet-api-5.0.0.jar;C:\Program Files\Apache Software Foundation\Tomcat 10.0\lib\postgresql-42.5.0.jar;C:\Program Files\Apache Software Foundation\Tomcat 10.0\lib\poi-3.9.jar;.;
+
+set classpath=%classpath%;set classpath=%classpath%;C:\Program Files\Apache Software Foundation\Tomcat 10.0\lib\jakarta.servlet-api-5.0.0.jar;C:\Program Files\Apache Software Foundation\Tomcat 10.0\lib\postgresql-42.5.0.jar;C:\Program Files\Apache Software Foundation\Tomcat 10.0\lib\poi-3.9.jar;C:\Program Files\Apache Software Foundation\Tomcat 10.0\lib\poi-ooxml-3.9;C:\Program Files\Apache Software Foundation\Tomcat 10.0\lib\commons-math3-3.6.1.jar;.;
+
+set classpath=%classpath%;set classpath=%classpath%;C:\apache-tomcat-10.0.13\lib\jakarta.servlet-api-5.0.0.jar;C:\apache-tomcat-10.0.13\lib\postgresql-42.6.0.jar;.;

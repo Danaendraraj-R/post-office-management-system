@@ -1,0 +1,28 @@
+<html><body>
+<html><head><title>View Post</title>
+<link rel='stylesheet' href='/styles.css'>
+<style>th{padding-top: 12px;padding-bottom: 12px;text-align: center;background-color: #C04000;color: white;}
+th {border: 1px solid #ddd;padding: 8px;}table{font-family: Arial, Helvetica, sans-serif;border-collapse: collapse;width: 100%;}
+td{background-color:#fbfce8;border: 1px solid #ddd;padding: 8px;},th {border: 1px solid #ddd;padding: 8px;}tr:hover {background-color: #ddd;}
+a,button{background-color:#C04000;border-radius: 56px;color: #fff;font-family: system-ui,-apple-system,system-ui,'Segoe UI',Roboto,Ubuntu,'Helvetica Neue',sans-serif;
+font-size: 18px;font-weight: 600;outline: 0;padding: 16px 21px;position: relative;text-align: center;}</style>
+<script type='text/javascript' src='https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js'></script>
+<script type='text/javascript' src='Exportxl.js'></script>
+<script type='text/javascript' src='ExportPDF1.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js'></script
+</head><body>
+<button onclick=ExportToExcel('xlsx')> Export to excel </button>
+<button onclick=exportPDF('postlist')>Export to PDF</button>
+<div id='postlist'><table id='SentPost' border=1 width=100% height=50%>
+<thead><tr><th>Sender Name</th><th>Sender Address</th><th>Sender Pincode</th><th>Sender Phone</th><th>Receiver Name</th><th>Reciever Address</th><th>Reciever Pincode</th><th>Reciever Phonenumber</th><th>Consignment Number</th><th>Price</th></tr></thead><tbody>
+<tr><td>Danaendraraj</td><td>O.Rajapalayam</td><td>637209</td><td>9236478213</td><td>Deepak</td><td>Tirupur</td><td>627899</td><td>9289392344</td><td>4203254</td><td>150</td></tr>
+<tr><td>Danaendraraj</td><td>O.Rajapalayam</td><td>637209</td><td>9236478213</td><td>James</td><td>Coimbatore</td><td>641659</td><td>9262782923</td><td>4615559</td><td>150</td></tr>
+<tr><td>Danaendraraj</td><td>O.Rajapalayam</td><td>637209</td><td>9236478213</td><td>Deepak</td><td>Tirupur</td><td>638382</td><td>9289392344</td><td>2158598</td><td>150</td></tr>
+<tr><td>Danaendraraj</td><td>O.Rajapalayam</td><td>637209</td><td>9236478213</td><td>Ram</td><td>Tirunelveli</td><td>637282</td><td>8272889299</td><td>3739142</td><td>50</td></tr>
+<tr><td>Danaendraraj</td><td>O.Rajapalayam</td><td>637209</td><td>9236478213</td><td>Ram</td><td>Tirunelveli</td><td>637282</td><td>8272889299</td><td>3770348</td><td>50</td></tr>
+<tr><td>Danaendraraj</td><td>O.Rajapalayam</td><td>637209</td><td>9236478213</td><td>Guhan</td><td>Erode</td><td>625389</td><td>92728393002</td><td>3757837</td><td>150</td></tr>
+<tr><td>Danaendraraj</td><td>O.Rajapalayam</td><td>637209</td><td>9236478213</td><td>James</td><td>Tirupur</td><td>657289</td><td>9273738389</td><td>1493641</td><td>150</td></tr>
+</tbody></table></div>
+<br>
+<center><a href='User.jsp'>Back</a><center>
+</html></body>

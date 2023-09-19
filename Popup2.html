@@ -1,0 +1,18 @@
+<html>
+   <body>
+    <div id="div1" style="visibility: hidden">
+        Show a DIV after 15 seconds.
+    </div>
+
+   </body>
+   <script type="text/javascript">
+    function showDiv1() {
+      document.getElementById("div1").style.visibility = "visible";
+    }
+    setTimeout("showDiv1()", 5000); // after 15 sec
+    function showDiv2() {
+      document.getElementById("div2").style.visibility = "visible";
+    }
+    setTimeout("showDiv2()", 8000); // after 30 secs
+   </script>
+</html>

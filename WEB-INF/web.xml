@@ -1,0 +1,185 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+					  http://tomcat.apache.org/xml tomcat-users.xsd"
+  version="1.0"
+  metadata-complete="true">
+
+ <servlet>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>Register</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/Register</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <servlet-name>ViewPO</servlet-name>
+    <servlet-class>ViewPO</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>ViewPO</servlet-name>
+    <url-pattern>/admin/ViewPO</url-pattern>
+ </servlet-mapping>
+   <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>Logout</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+ </servlet-mapping>
+    <servlet>
+    <servlet-name>Logout1</servlet-name>
+    <servlet-class>Logout1</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>Logout1</servlet-name>
+    <url-pattern>/Logout1</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <servlet-name>ADDPO</servlet-name>
+    <servlet-class>ADDPO</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>ADDPO</servlet-name>
+    <url-pattern>/admin/ADDPO</url-pattern>
+ </servlet-mapping>
+   <servlet>
+    <servlet-name>DeletePO</servlet-name>
+    <servlet-class>DeletePO</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>DeletePO</servlet-name>
+    <url-pattern>/admin/DeletePO</url-pattern>
+ </servlet-mapping>
+    <servlet>
+    <servlet-name>UpdatePO</servlet-name>
+    <servlet-class>UpdatePO</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>UpdatePO</servlet-name>
+    <url-pattern>/admin/UpdatePO</url-pattern>
+ </servlet-mapping>
+      <servlet>
+    <servlet-name>ExportFiles1</servlet-name>
+    <servlet-class>ExportModule.ExportFiles1</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>ExportFiles1</servlet-name>
+    <url-pattern>/user/ExportFiles1</url-pattern>
+ </servlet-mapping>
+   <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>Login</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+ </servlet-mapping>
+   <servlet>
+    <servlet-name>Login1</servlet-name>
+    <servlet-class>Login1</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>Login1</servlet-name>
+    <url-pattern>/Login1</url-pattern>
+ </servlet-mapping>
+    <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>LogoutServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <servlet-name>SendPost1</servlet-name>
+    <servlet-class>SendPost1</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>SendPost1</servlet-name>
+    <url-pattern>/user/SendPost1</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <servlet-name>ExportFiles</servlet-name>
+    <servlet-class>ExportFiles</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>ExportFiles</servlet-name>
+    <url-pattern>/admin/ExportFiles</url-pattern>
+    <url-pattern>/user/ExportFiles</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <servlet-name>XLS</servlet-name>
+    <servlet-class>XLS</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>XLS</servlet-name>
+    <url-pattern>/admin/XLS</url-pattern>
+ </servlet-mapping>
+
+  <servlet>
+    <servlet-name>GeneratePDF</servlet-name>
+    <servlet-class>GeneratePDF</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>GeneratePDF</servlet-name>
+    <url-pattern>/GeneratePDF</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <servlet-name>XLS1</servlet-name>
+    <servlet-class>XLS1</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>XLS1</servlet-name>
+    <url-pattern>/user/XLS1</url-pattern>
+ </servlet-mapping>
+
+   <servlet>
+    <servlet-name>ViewPost</servlet-name>
+    <servlet-class>ViewPost</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>ViewPost</servlet-name>
+    <url-pattern>/user/ViewPost</url-pattern>
+ </servlet-mapping>
+ <welcome-file-list>
+      <welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+<security-constraint>
+  <web-resource-collection>
+    <web-resource-name>Admin</web-resource-name>
+    <url-pattern>/admin/*</url-pattern>
+  </web-resource-collection>
+  <auth-constraint>
+    <role-name>admin</role-name>
+  </auth-constraint>
+</security-constraint>
+
+<security-role>
+  <role-name>admin</role-name>
+</security-role>
+
+<security-constraint>
+  <web-resource-collection>
+    <web-resource-name>User</web-resource-name>
+    <url-pattern>/user/*</url-pattern>
+  </web-resource-collection>
+  <auth-constraint>
+    <role-name>user</role-name>
+  </auth-constraint>
+</security-constraint>
+
+<security-role>
+  <role-name>user</role-name>
+</security-role>
+
+<login-config>
+  <auth-method>FORM</auth-method>
+  <form-login-config>
+    <form-login-page>/AdminLogin.jsp</form-login-page>
+    <form-error-page>/Error2.jsp</form-error-page>
+  </form-login-config>
+</login-config>
+</web-app>

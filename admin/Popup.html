@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+	   <meta http-equiv="refresh" content="6; URL=ViewPO" />
+	   <style>
+	   div{
+	    margin-top:50px;
+	    box-shadow: 10px 10px lightblue;
+		border-width:1px;
+	   }
+	   h1{
+	   margin-top:50px;
+	   }
+	   </style>
+  </head>
+
+  <body>
+   <center>
+    <div id="box" style="height: 150px; width: 700px; background-color: #fbfce8">
+      <h1>Operation Performed Successfully</h1>
+	  <h1>Redirecting...</h1>
+    </div>
+  </center>
+    <script type="text/javascript">
+setTimeout(() => {
+  const box = document.getElementById('box');
+  box.style.display = 'none';
+}, 5000);
+</script>
+ </body>
+</html>
